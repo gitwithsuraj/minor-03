@@ -29,6 +29,31 @@
         die();
       }
     }
+
+
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Form site</title>
+    </head>
+    <body bgcolor="skyblue"><br><br>
+        <form method="post" action="./connect.php">
+            <table align="center"> <caption> Registration Form </caption>
+                <tr>
+                    <td>Username : </td>
+                    <td><input type="text" name="username" placeholder="Enter Username"></td>
+                </tr>
+                <tr>
+                    <td>Password : </td>
+                    <td><input type="password" name="password" placeholder="Enter Password"></td>
+                </tr>
+                <tr>
+                    <td>E-Mail : </td><td><input type="email" name="email" placeholder="Enter Email" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number : </td>
+                    <td><input type="phone" name="mobile" placeholder="Enter Mobile Number" required></td>
     if($mobile !="")
     {
       $res = mysqli_query($conn,"SELECT * FROM `registration` where mob='".$mobile."'");
